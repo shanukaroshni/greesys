@@ -15,6 +15,6 @@ public class GreetController {
     @GetMapping("/greet")
     public String greet(@RequestParam String name, org.springframework.ui.Model model) {
         model.addAttribute("message", "Hello, " + name + "!");
-        return "greet";
+        return "welcome";
     }
 }
